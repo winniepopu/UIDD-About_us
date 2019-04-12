@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+ * Section-2
+ * by Wun Hua
+ */
+
+.intro {
+    background: white;
+}
+
+.intro-left {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    margin-left: -45vw;
+    background-color: #f7484e;
+    text-align: center;
+}
+
+#word-about {
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    height: 3rem;
+    width: 20rem
+}
+
+.dash {
+    height: 30vh;
+    width: 70%;
+    margin: 0px auto;
+    /* text-align: center; */
+}
+
+
+/* .dash img {
+    max-width: 70%;
+    max-height: 30vh;
+} */
+
+.board {
+    display: inline-block;
+}
+
+
+/* del */
+
+#w-word {
+    margin-top: 5rem;
+    height: 2.5rem;
+    width: 20rem;
+}
+
+.arrow {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    width: 4rem;
+    display: inline-block;
+}
+
+
+/*
+ * others
+ */
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    /* nature black */
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    /* horizontal center */
+}
+
+.intro {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.btn-intro {
+    padding: 0.5rem 2.5rem;
+    color: #fff;
+    background-color: #43a7a7;
+    border-radius: 3rem;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
+}
