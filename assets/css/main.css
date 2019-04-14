@@ -96,3 +96,134 @@ a {
     border-radius: 3rem;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
 }
+/* section-3 */
+#S3background{
+    position: absolute;
+    top: 100vh;
+    width: 100vw;
+    height: 100vh;
+}
+
+#S3Line{
+    position: absolute;
+    top: 103vh;
+    left: 8.5vw;
+    width: 85vw;
+    height: 40vh;
+}
+
+.teamMember{
+    position: absolute;
+    top: 160vh;
+    width: 20vw;
+}
+
+.personalIntro p{
+
+    margin: 0;
+}
+
+.frameImg{
+    position: absolute;
+    top: -20vh;
+    left: 2.3vw;
+    width: 20vmin;
+    height: 20vmin;
+}
+
+.personalImg{
+    z-index: 2;
+    position: absolute;
+    top: -18.71vh;
+    left: 3.55vw;
+    width: 17vmin;
+    height: 17vmin;
+    cursor: pointer;
+}
+
+.YAHAN{
+    position: absolute;
+}
+
+.SHENSI{
+    position: absolute;
+    left: 20vw;
+}
+
+.TINGYI{
+    position: absolute;
+    left: 40vw;
+}
+
+.WENHUA{
+    position: absolute;
+    left: 60vw;
+}
+
+.SHANGRONG{
+    position: absolute;
+    left: 80vw;
+}
+
+#section-3 p{
+    font-family: Microsoft JhengHei;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 900;
+    padding: 20px 0 0px 4vw;
+}
+
+.resume{
+    padding: 10px 0 20px 4vw;
+}
+.saying{
+    font-size: 1.2rem;
+    font-style: oblique;
+    font-weight: 600;
+    text-align: center;
+}
+
+.S3Line{
+    position: absolute;
+    top: 103vh
+}
+#S3line1{
+    width: 20vw;
+    height: 40vh;
+    position: absolute;
+    left: 8vw;
+    top: 103vh;
+}
+
+#S3line2{
+    width: 9vw;
+    height: 26vh;
+    position: absolute;
+    right: 61vw;
+    top: 119vh;
+}
+
+#S3line3{
+    width: 7vw;
+    height: 20vh;
+    position: absolute;
+    right: 45.5vw;
+    top: 125vh;
+}
+
+#S3line4{
+    width: 10vw;
+    height: 25vh;
+    position: absolute;
+    left: 60vw;
+    top: 120vh;
+}
+
+#S3line5{
+    width: 20vw;
+    height: 40vh;
+    position: absolute;
+    left: 72vw;
+    top: 103vh;
+}
