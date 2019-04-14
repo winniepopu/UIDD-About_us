@@ -2,47 +2,44 @@
 
 $(document).ready(function() {
 
-<<<<<<< HEAD
-$(".intro-left").animate({
-    'margin-left': '0px'
-}, 2000);
+    $(".intro-left").animate({
+        'margin-left': '0px'
+    }, 2000);
 
-var sourceSwap = function () {
-    var $this = $(this);
-    var newSource = $this.data('alt-src');
-    $this.data('alt-src', $this.attr('src'));
-    $this.attr('src', newSource);
-}
+    var sourceSwap = function() {
+        var $this = $(this);
+        var newSource = $this.data('alt-src');
+        $this.data('alt-src', $this.attr('src'));
+        $this.attr('src', newSource);
+    }
 
-var S3=false;
+    var S3 = false;
 
-$(function () {
-    $('.S3line').hide();
-    $('.introTeam').hide();
-    $('.personalImg').hover(sourceSwap, sourceSwap);
-    $(window).scroll(function () {
-        var scrollVal = $(this).scrollTop();
-        if(scrollVal > 500 && S3==false){
-            $('.S3line').delay(1000).transition('fade',1000);
-            //setTimeout(introT,500);
-            $('.introTeam').delay(5000).transition('fade',500);
-            /*$('.S3line').transition('fade', 500);
-            $('.introTeam').transition('fade', 500);*/
-            S3=true;
-          }
-        else if(scrollVal <300 && S3==true){
-            S3=false;
-            $('.S3line').transition('fade',1000);
-            $('.introTeam').transition('fade',500);
-          }
-      });
-});
+    $(function() {
+        $('.S3line').hide();
+        $('.introTeam').hide();
+        $('.personalImg').hover(sourceSwap, sourceSwap);
+        $(window).scroll(function() {
+            var scrollVal = $(this).scrollTop();
+            if (scrollVal > 500 && S3 == false) {
+                $('.S3line').delay(1000).transition('fade down', 1000);
+                //setTimeout(introT,500);
+                $('.introTeam').delay(5000).transition('drop', 500);
+                /*$('.S3line').transition('fade', 500);
+                $('.introTeam').transition('fade', 500);*/
+                S3 = true;
+            } else if (scrollVal < 300 && S3 == true) {
+                S3 = false;
+                $('.S3line').transition('fade', 1000);
+                $('.introTeam').transition('fade', 500);
+            }
+        });
+    });
 
-function introT(){
-    $('.introTeam').transition('fade',500);
-}
+    function introT() {
+        $('.introTeam').transition('fade', 500);
+    }
 
-=======
     var show2 = false;
     var show3 = false;
     $(window).scroll(function() {
@@ -65,10 +62,8 @@ function introT(){
             }
         }
 
-        if (h >= 2600 && h <= 2800) {
-            // $('.case-bigone1').slideDown(800)
-            // $('.case-bigone2').fadeIn(1500)
-            // $('.case-bigone3').fadeIn(1500)
+        if (h >= 2.9 * sectionHeight && h <= 3.9 * sectionHeight) {
+            // 打你要讓他做的動作
         }
 
         if (h >= 3000 && h <= 3400) {
@@ -196,4 +191,3 @@ function w3Appear() {
 }
 
 /*HUA*/
->>>>>>> 4e213a441769496e7cd5dfc51ed339798877f32a

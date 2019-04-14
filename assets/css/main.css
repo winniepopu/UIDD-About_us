@@ -245,34 +245,49 @@ a {
     border-radius: 3rem;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
 }
+
+
 /* section-3 */
-#S3background{
+
+#S3background {
     position: absolute;
-    top: 100vh;
+    /* top: 100vh; */
     width: 100vw;
     height: 100vh;
 }
 
-#S3Line{
+.S3 {
+    position: relative;
+}
+
+.S3allLine {
+    position: relative;
+}
+
+
+/* #S3Line {
     position: absolute;
-    top: 103vh;
+    top: 3vh;
     left: 8.5vw;
     width: 85vw;
     height: 40vh;
+} */
+
+.introTeam {
+    position: relative;
 }
 
-.teamMember{
+.teamMember {
     position: absolute;
-    top: 160vh;
+    top: 60vh;
     width: 20vw;
 }
 
-.personalIntro p{
-
+.personalIntro p {
     margin: 0;
 }
 
-.frameImg{
+.frameImg {
     position: absolute;
     top: -20vh;
     left: 2.3vw;
@@ -280,7 +295,7 @@ a {
     height: 20vmin;
 }
 
-.personalImg{
+.personalImg {
     z-index: 2;
     position: absolute;
     top: -18.71vh;
@@ -290,89 +305,100 @@ a {
     cursor: pointer;
 }
 
-.YAHAN{
+.YAHAN {
     position: absolute;
 }
 
-.SHENSI{
+.SHENSI {
     position: absolute;
     left: 20vw;
 }
 
-.TINGYI{
+.TINGYI {
     position: absolute;
     left: 40vw;
 }
 
-.WENHUA{
+.WENHUA {
     position: absolute;
     left: 60vw;
 }
 
-.SHANGRONG{
+.SHANGRONG {
     position: absolute;
     left: 80vw;
 }
 
-#section-3 p{
+#section-3 {
+    background-image: url(../media/S3background.png);
+    width: 100vw;
+    height: 100vh;
+    /* background-color: black; */
+}
+
+#section-3 p {
     font-family: Microsoft JhengHei;
 }
-.name{
+
+.name {
     font-size: 1.2rem;
     font-weight: 900;
     padding: 20px 0 0px 4vw;
 }
 
-.resume{
+.resume {
     padding: 10px 0 20px 4vw;
 }
-.saying{
+
+.saying {
     font-size: 1.2rem;
     font-style: oblique;
     font-weight: 600;
     text-align: center;
 }
 
-.S3Line{
+
+/* .S3Line {
     position: absolute;
     top: 103vh
-}
-#S3line1{
+} */
+
+#S3line1 {
     width: 20vw;
     height: 40vh;
     position: absolute;
     left: 8vw;
-    top: 103vh;
+    top: 3vh;
 }
 
-#S3line2{
+#S3line2 {
     width: 9vw;
     height: 26vh;
     position: absolute;
     right: 61vw;
-    top: 119vh;
+    top: 19vh;
 }
 
-#S3line3{
+#S3line3 {
     width: 7vw;
     height: 20vh;
     position: absolute;
     right: 45.5vw;
-    top: 125vh;
+    top: 25vh;
 }
 
-#S3line4{
+#S3line4 {
     width: 10vw;
     height: 25vh;
     position: absolute;
     left: 60vw;
-    top: 120vh;
+    top: 20vh;
 }
 
-#S3line5{
+#S3line5 {
     width: 20vw;
     height: 40vh;
     position: absolute;
     left: 72vw;
-    top: 103vh;
+    top: 3vh;
 }
