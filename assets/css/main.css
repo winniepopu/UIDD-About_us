@@ -4,6 +4,64 @@
     box-sizing: border-box;
 }
 
+#section-1 {
+    width: 100vw;
+    height: 100vh;
+}
+
+.rec {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.intro-2 {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    /* padding-top: 4rem; */
+    padding: 4rem 3rem 0 2rem;
+}
+
+#section-2 {
+    position: relative;
+}
+
+.e-Title {
+    width: 100%;
+    font-family: Microsoft JhengHei;
+    text-align: center;
+    color: white;
+}
+
+.e-card {
+    padding-top: 7rem;
+    text-align: center;
+}
+
+.e-icon {
+    width: 30%;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+.e-iconTitle {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: Microsoft JhengHei;
+    color: white;
+}
+
+.P3-title {
+    font-style: bold;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.e-iconWord {
+    color: white;
+}
+
 
 /*
  * Section-2
@@ -12,6 +70,14 @@
 
 .intro {
     background: white;
+    height: 100vh;
+}
+
+.arrow-d {
+    position: absolute;
+    bottom: 1rem;
+    left: 48%;
+    width: 4rem;
 }
 
 .intro-left {
@@ -21,10 +87,60 @@
     margin-left: -45vw;
     background-color: #f7484e;
     text-align: center;
+    /* transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955); */
+}
+
+.intro-right {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 3rem;
+    position: relative;
+    width: 50%;
+    height: 100vh;
+}
+
+.w-Title {
+    /* font: italic; */
+    font-style: italic;
+    font-size: 18pt;
+    margin-bottom: 1rem;
+    /* margin-left: 2rem; */
+    border-color: black;
+    border-left-style: solid;
+    border-width: 2.5pt;
+    padding-left: 0.6rem;
+}
+
+.w-aboutus,
+.w-motivation,
+.w-ourmission {
+    margin-top: 3rem;
+}
+
+
+/* w-Title img {
+    width: 100%;
+} */
+
+.align-center {
+    /* position: absolute; */
+    /* top: 43%; */
+    /* left: 50%; */
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.word-problem {
+    color: #ffffff;
+    /* margin-bottom: 0.08rem; */
+    /* font-family: Microsoft JhengHei; */
+    font-family: Microsoft JhengHei;
+    /* font-weight: bold; */
+    font-size: 13pt;
 }
 
 #word-about {
-    margin-top: 10rem;
+    margin-top: 20rem;
     margin-bottom: 3rem;
     height: 3rem;
     width: 20rem
@@ -34,7 +150,7 @@
     height: 30vh;
     width: 70%;
     margin: 0px auto;
-    /* text-align: center; */
+    text-align: center;
 }
 
 
@@ -50,6 +166,39 @@
 
 /* del */
 
+
+/* .w-word {
+    margin-top: 5rem;
+    height: 2.5rem;
+    width: 3.5rem;
+    padding-bottom: 0.2rem;
+    filter: drop-shadow(0px 1px 0.5px rgba(155, 140, 140, 0.9));
+}
+
+.w-word:hover {
+    margin-top: 5rem;
+    height: 2.5rem;
+    width: 3.5rem;
+    cursor: pointer;
+    padding-bottom: 0.2rem;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgba(218, 210, 210, 0.9);
+} */
+
+.w-word {
+    margin-left: 3rem;
+    font-family: Microsoft JhengHei;
+    line-height: 24px;
+    font-size: 11pt;
+}
+
+.w-dia {
+    margin-top: 5rem;
+    height: 3rem;
+    width: 2rem;
+}
+
 #w-word {
     margin-top: 5rem;
     height: 2.5rem;
@@ -61,7 +210,7 @@
     right: 1.5rem;
     top: 50%;
     width: 4rem;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 
