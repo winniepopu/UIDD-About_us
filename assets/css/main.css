@@ -409,9 +409,7 @@ a {
     width:100%;
     height:100%;
     }
-.backgroud1{
-    position:absolute;
-}
+
 .mid_pic{
     position: absolute;
     margin:auto;
@@ -444,24 +442,15 @@ a {
    margin-right:25px;
    margin-left:25px;
    float:left;
+   width:50%;
 }
 .about-1{
-    width:465px;
-   height:100px;
 }
 .contact-1{
-    width:347px;
-   height:100px;
 }
 .member-1{
-    width:396px;
-   height:100px;
 }
 .dash-1{
-   width:114px;
-   height:100px;
 }
 .dash-2{
-    width:114px;
-   height:100px;
 }
