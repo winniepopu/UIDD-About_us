@@ -403,3 +403,55 @@ a {
     left: 72vw;
     top: 3vh;
 }
+
+/*sense*/
+.backgroud-1{
+    position:absolute;
+    width:100%;
+    height:100%;
+    }
+
+.mid_pic{
+    position: absolute;
+    margin:auto;
+    width: 300px;
+    height: 200px;
+}
+#finger{
+    position: absolute;
+    left: 200%;
+    top: 60%;
+}
+.welcome{
+    position:relative;
+    margin:auto;
+    left: 100%;
+    top: 150%;
+    width:300px;
+}
+.link{
+    position:absolute;
+    bottom:100px;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto; 
+    float:left;
+   }
+.icon{
+   position:relative;
+   top:0px;
+   margin-right:25px;
+   margin-left:25px;
+   float:left;
+   width:50%;
+}
+.about-1{
+}
+.contact-1{
+}
+.member-1{
+}
+.dash-1{
+}
+.dash-2{
+}

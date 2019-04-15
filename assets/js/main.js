@@ -186,3 +186,36 @@ function w3Appear() {
 }
 
 /*HUA*/
+/*sense*/
+function scrollTo(ele, speed){
+	if(!speed) speed = 300;
+	if(!ele){
+		$("html,body").animate({scrollTop:0},speed);
+	}else{
+		if(ele.length>0) $("html,body").animate({scrollTop:$(ele).offset().top},speed);
+	}
+	return false;
+}
+var imgArray = [
+    'assets/media/page1-03.png',
+    'assets/media/page1-02.png',
+    'assets/media/page1-03.png',
+    'assets/media/page1-02.png',
+    'assets/media/page1-03.png',
+    'assets/media/page1-03.png',
+    'assets/media/page1-03.png',
+    'assets/media/page1-03.png',],
+    curIndex = 0;
+    imgDuration = 3000;
+
+function slideShow() {
+    document.getElementById('slider').className += "fadeOut";
+    setTimeout(function() {
+        document.getElementById('slider').src = imgArray[curIndex];
+        document.getElementById('slider').className = "";
+    },1000);
+    curIndex++;
+    if (curIndex == imgArray.length) { curIndex = 0; }
+    setTimeout(slideShow, imgDuration);
+}
+slideShow();
