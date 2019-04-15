@@ -1,10 +1,28 @@
 /*HUA*/
 
 $(document).ready(function() {
+    animateSection1();
+    // section-1
+    $(".Bt-about").click(function() {
+        // $([document.documentElement, document.body]).animate({
+        //     scrollTop: $("#section-2").offset().top
+        // }, 2000);
+        $('html, body').animate({ scrollTop: $("#section-2").offset().top }, 2000);
+    });
 
-    $(".intro-left").animate({
-        'margin-left': '0px'
-    }, 2000);
+    $(".Bt-purpose").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#section-2_5").offset().top
+        }, 2000);
+    });
+
+    $(".Bt-members").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#section-3").offset().top
+        }, 2000);
+    });
+
+
 
     var sourceSwap = function() {
         var $this = $(this);
@@ -18,7 +36,7 @@ $(document).ready(function() {
         $('.introTeam').hide();
         $('.S3line').hide();
     });
-
+    var show1 = false;
     var show2 = false;
     var show3 = false;
     var show4 = false;
@@ -26,12 +44,24 @@ $(document).ready(function() {
         var h = $(this).scrollTop();
         console.log(h);
         var sectionHeight = document.body.offsetHeight;
+        // if (h <= 0.9 * sectionHeight) {
+        //     if (!show1) {
+        //         // console.log(show2)
+        //         animateSection1();
+        //         show1 = true;
+        //         // console.log(show2)
+        //     }
+        // }
+
+
         if (h >= 0.9 * sectionHeight && h <= 1.9 * sectionHeight) {
+            console.log(h)
             if (!show2) {
+                // console.log(show2)
                 console.log(show2)
                 animateSection2();
                 show2 = true;
-                console.log(show2)
+                // console.log(show2)
             }
         }
 
@@ -44,7 +74,7 @@ $(document).ready(function() {
 
         if (h >= 2.9 * sectionHeight && h <= 3.9 * sectionHeight) {
             // 打你要讓他做的動作
-            if(!show4){
+            if (!show4) {
                 animateSection3();
                 show4 = true;
             }
@@ -100,7 +130,10 @@ $(document).ready(function() {
 
 
 
+
+
 function animateSection2() {
+    console.log("2555")
     $(".intro-left").animate({
         'margin-left': '0px',
     }, 2000)
@@ -128,6 +161,14 @@ function animateSection3() {
     setTimeout(S3introTeamZoom, 1000);
 }
 
+function animateSection1() {
+    setTimeout(fingerAppear, 0);
+}
+
+function fingerAppear() {
+    $('#finger').transition('fade up', 500);
+}
+
 function icon1Zoom() {
     $('.e-card:first-child').transition('drop', 500)
 }
@@ -140,11 +181,11 @@ function icon3Zoom() {
     $('e.card:nth-child(3)').transition('drop', 500)
 }
 
-function S3lineZoom(){
+function S3lineZoom() {
     $('.S3line').transition('fade down', 2000);
 }
 
-function S3introTeamZoom(){
+function S3introTeamZoom() {
     $('.introTeam').transition('fade', 2000);
 }
 
@@ -187,35 +228,54 @@ function w3Appear() {
 
 /*HUA*/
 /*sense*/
-function scrollTo(ele, speed){
-	if(!speed) speed = 300;
-	if(!ele){
-		$("html,body").animate({scrollTop:0},speed);
-	}else{
-		if(ele.length>0) $("html,body").animate({scrollTop:$(ele).offset().top},speed);
-	}
-	return false;
+function scrollTo(ele, speed) {
+    if (!speed) speed = 300;
+    if (!ele) {
+        $("html,body").animate({ scrollTop: 0 }, speed);
+    } else {
+        if (ele.length > 0) $("html,body").animate({ scrollTop: $(ele).offset().top }, speed);
+    }
+    return false;
 }
 var imgArray = [
-    'assets/media/page1-03.png',
-    'assets/media/page1-02.png',
-    'assets/media/page1-03.png',
-    'assets/media/page1-02.png',
-    'assets/media/page1-03.png',
-    'assets/media/page1-03.png',
-    'assets/media/page1-03.png',
-    'assets/media/page1-03.png',],
+        'assets/media/page1-03.png',
+        'assets/media/page1-02.png',
+        'assets/media/page1-03.png',
+        'assets/media/page1-02.png',
+        'assets/media/page1-03.png',
+        'assets/media/page1-03.png',
+        'assets/media/page1-03.png',
+        'assets/media/page1-03.png',
+    ],
     curIndex = 0;
-    imgDuration = 3000;
+imgDuration = 3000;
 
 function slideShow() {
     document.getElementById('slider').className += "fadeOut";
     setTimeout(function() {
         document.getElementById('slider').src = imgArray[curIndex];
         document.getElementById('slider').className = "";
-    },1000);
+    }, 1000);
     curIndex++;
     if (curIndex == imgArray.length) { curIndex = 0; }
     setTimeout(slideShow, imgDuration);
 }
 slideShow();
+
+
+// (function() {
+//     document.onreadystatechange = () => {
+//         if (document.readyState === 'complete') {
+//             let el = document.querySelector('#page104');
+//             let myAnimation = new LazyLinePainter(el, {
+//                 "ease": "easeLinear",
+//                 "strokeWidth": 3.5,
+//                 "strokeOpacity": 1,
+//                 "strokeColor": "#2ECC70",
+//                 "strokeCap": "square"
+//             });
+//             myAnimation.paint();
+//         }
+//     }
+
+// })();
