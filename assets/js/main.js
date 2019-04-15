@@ -13,35 +13,15 @@ $(document).ready(function() {
         $this.attr('src', newSource);
     }
 
-    var S3 = false;
-
     $(function() {
-        $('.S3line').hide();
-        $('.introTeam').hide();
         $('.personalImg').hover(sourceSwap, sourceSwap);
-        $(window).scroll(function() {
-            var scrollVal = $(this).scrollTop();
-            if (scrollVal > 500 && S3 == false) {
-                $('.S3line').delay(1000).transition('fade down', 1000);
-                //setTimeout(introT,500);
-                $('.introTeam').delay(5000).transition('drop', 500);
-                /*$('.S3line').transition('fade', 500);
-                $('.introTeam').transition('fade', 500);*/
-                S3 = true;
-            } else if (scrollVal < 300 && S3 == true) {
-                S3 = false;
-                $('.S3line').transition('fade', 1000);
-                $('.introTeam').transition('fade', 500);
-            }
-        });
+        $('.introTeam').hide();
+        $('.S3line').hide();
     });
-
-    function introT() {
-        $('.introTeam').transition('fade', 500);
-    }
 
     var show2 = false;
     var show3 = false;
+    var show4 = false;
     $(window).scroll(function() {
         var h = $(this).scrollTop();
         console.log(h);
@@ -64,6 +44,10 @@ $(document).ready(function() {
 
         if (h >= 2.9 * sectionHeight && h <= 3.9 * sectionHeight) {
             // 打你要讓他做的動作
+            if(!show4){
+                animateSection3();
+                show4 = true;
+            }
         }
 
         if (h >= 3000 && h <= 3400) {
@@ -139,6 +123,11 @@ function animateSection2_5() {
     // setTimeout(icon3Zoom, 2000);
 }
 
+function animateSection3() {
+    setTimeout(S3lineZoom, 0);
+    setTimeout(S3introTeamZoom, 1000);
+}
+
 function icon1Zoom() {
     $('.e-card:first-child').transition('drop', 500)
 }
@@ -151,7 +140,13 @@ function icon3Zoom() {
     $('e.card:nth-child(3)').transition('drop', 500)
 }
 
+function S3lineZoom(){
+    $('.S3line').transition('fade down', 2000);
+}
 
+function S3introTeamZoom(){
+    $('.introTeam').transition('fade', 2000);
+}
 
 
 function WordTop() {
