@@ -143,14 +143,14 @@ function animateSection2() {
 
     $(".intro-left").animate({
         'margin-left': '0px',
-    }, 2000)
+    }, 1000)
 
-    setTimeout(WordTop, 2000)
-    setTimeout(TextAppear, 2500)
-    setTimeout(w1Appear, 2600)
-    setTimeout(w2Appear, 2800)
-    setTimeout(w3Appear, 3000)
-    setTimeout(ArrowStar, 3800)
+    setTimeout(WordTop, 1000)
+    setTimeout(TextAppear, 1500)
+    setTimeout(w1Appear, 1600)
+    setTimeout(w2Appear, 1800)
+    setTimeout(w3Appear, 2000)
+    setTimeout(ArrowStar, 2800)
 }
 
 function animateSection2_5() {
@@ -159,13 +159,15 @@ function animateSection2_5() {
     }, 700)
 
     setTimeout(icon1Zoom, 1000);
-    // setTimeout(icon2Zoom, 1500);
-    // setTimeout(icon3Zoom, 2000);
+    setTimeout(ArrowStar2, 1800)
+        // setTimeout(icon2Zoom, 1500);
+        // setTimeout(icon3Zoom, 2000);
 }
 
 function animateSection3() {
     setTimeout(S3lineZoom, 0);
     setTimeout(S3introTeamZoom, 1000);
+    setTimeout(ArrowStar3, 1800)
 }
 
 function animateSection1() {
@@ -232,6 +234,23 @@ function ArrowStar() {
     $('.arrow-d').transition('fade up', 200);
     $('.arrow-d').transition('fade up', 400);
 }
+
+function ArrowStar2() {
+    $('.arrow-d2').transition('fade up', 1000);
+    $('.arrow-d2').transition('fade up', 200);
+    $('.arrow-d2').transition('fade up', 200);
+    $('.arrow-d2').transition('fade up', 200);
+    $('.arrow-d2').transition('fade up', 400);
+}
+
+function ArrowStar3() {
+    $('.arrow-d3').transition('fade up', 1000);
+    $('.arrow-d3').transition('fade up', 200);
+    $('.arrow-d3').transition('fade up', 200);
+    $('.arrow-d3').transition('fade up', 200);
+    $('.arrow-d3').transition('fade up', 400);
+}
+
 
 function w1Appear() {
     $('.w-aboutus').transition('fade up', 1000);
