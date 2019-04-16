@@ -22,9 +22,9 @@
         <div class="background-1">
 
             <div class="mid_pic">
-                <img id="finger" src="assets/media/fin2.gif">
+                <img id="finger" class="transition hidden" src="assets/media/page1-02.png">
                 <div class="welcome">
-                    <div class="page104">
+                    <div id="page104">
                         <img src="assets/media/welcome.gif">
                     </div>
                 </div>
@@ -244,7 +244,6 @@
     </div>
     <div id="section-4">
         <div id="p4">
-
             <svg version="1.1" id="page122" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="399.153px" height="402.274px" viewBox="0 0 399.153 402.274" enable-background="new 0 0 399.153 402.274" xml:space="preserve"
                 data-llp-composed="true" class="lazy-line-painter">
                     
@@ -274,7 +273,7 @@
     <script src="assets/js/color.js "></script>
     <script src="assets/js/main.js "></script>
     <script src="assets/js/p4.js"></script>
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
         (function() {
             document.onreadystatechange = () => {
                 if (document.readyState === 'complete') {
@@ -291,14 +290,60 @@
             }
 
         })();
-    </script> -->
-
-
-
+        
+    </script>
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            setInterval(function(){
+                
+                $("#finger").attr("src","assets/media/page1-02.png")
+                 
+                $("#finger").attr("src","assets/media/page1-03.png")
+            },3000);            
+                
+                          
+        });
+    
+    </script>
+    
 </body>
 
 <script>
+    (function() {
+        document.onreadystatechange = () => {
+            if (document.readyState === 'complete') {
+                let el = document.querySelector('#page104');
+                let myAnimation = new LazyLinePainter(el, {
+                    "ease": "easeLinear",
+                    "strokeWidth": 3.5,
+                    "strokeOpacity": 1,
+                    "strokeColor": "#2ECC70",
+                    "strokeCap": "square"
+                });
+                myAnimation.paint();
+            }
+        }
+
+    })();
+
+    // (function() {
+    //     document.onreadystatechange = () => {
+    //         if (document.readyState === 'complete') {
+    //             let el = document.querySelector('#page122');
+    //             let myAnimation = new LazyLinePainter(el, {
+    //                 "ease": "easeLinear",
+    //                 "strokeWidth": 7.2,
+    //                 "strokeOpacity": 1,
+    //                 "strokeColor": "#E84B3C",
+    //                 "strokeCap": "square"
+    //             });
+    //             myAnimation.paint();
+    //         }
+    //     }
+
+    // })();
 </script>
 
-
+    
 </html>
