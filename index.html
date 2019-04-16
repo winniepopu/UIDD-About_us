@@ -22,7 +22,7 @@
         <div class="background-1">
 
             <div class="mid_pic">
-                <img id="finger" class="transition hidden" src="assets/media/page1-02.png">
+                <img id="finger" src="assets/media/fin2.gif">
                 <div class="welcome">
                     <div id="page104">
                         <img src="assets/media/welcome.gif">
@@ -273,7 +273,7 @@
     <script src="assets/js/color.js "></script>
     <script src="assets/js/main.js "></script>
     <script src="assets/js/p4.js"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         (function() {
             document.onreadystatechange = () => {
                 if (document.readyState === 'complete') {
@@ -290,38 +290,28 @@
             }
 
         })();
-        
-    </script>
-    
-    <script type="text/javascript">
-        $(document).ready(function(){
-            setInterval(function(){
-                $("#finger").attr("src","assets/media/page1-02.png")             
-            },3000);            
-                     
-        });
-    
-    </script>
-    
+    </script> -->
+
+
 </body>
 
 <script>
-    (function() {
-        document.onreadystatechange = () => {
-            if (document.readyState === 'complete') {
-                let el = document.querySelector('#page104');
-                let myAnimation = new LazyLinePainter(el, {
-                    "ease": "easeLinear",
-                    "strokeWidth": 3.5,
-                    "strokeOpacity": 1,
-                    "strokeColor": "#2ECC70",
-                    "strokeCap": "square"
-                });
-                myAnimation.paint();
-            }
-        }
+    // (function() {
+    //     document.onreadystatechange = () => {
+    //         if (document.readyState === 'complete') {
+    //             let el = document.querySelector('#page104');
+    //             let myAnimation = new LazyLinePainter(el, {
+    //                 "ease": "easeLinear",
+    //                 "strokeWidth": 3.5,
+    //                 "strokeOpacity": 1,
+    //                 "strokeColor": "#2ECC70",
+    //                 "strokeCap": "square"
+    //             });
+    //             myAnimation.paint();
+    //         }
+    //     }
 
-    })();
+    // })();
 
     // (function() {
     //     document.onreadystatechange = () => {
@@ -341,5 +331,5 @@
     // })();
 </script>
 
-    
+
 </html>
