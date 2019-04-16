@@ -82,6 +82,7 @@
 }
 
 .intro-left {
+    padding-top: 20rem;
     position: relative;
     width: 50%;
     height: 100vh;
@@ -141,7 +142,6 @@
 }
 
 #word-about {
-    margin-top: 20rem;
     margin-bottom: 3rem;
     height: 3rem;
     width: 20rem
@@ -298,14 +298,14 @@ a {
     text-align: center;
 }
 
-.personalIntro p {
+.personalIntro {
     margin: 0;
 }
 
 .frameImg {
     position: absolute;
     top: -20vh;
-    left: 2.3vw;
+    left: 4.5vw;
     width: 20vmin;
     height: 20vmin;
 }
@@ -314,7 +314,7 @@ a {
     z-index: 2;
     position: absolute;
     top: -18.71vh;
-    left: 3.55vw;
+    left: 5.2vw;
     width: 17vmin;
     height: 17vmin;
     cursor: pointer;
@@ -356,11 +356,11 @@ a {
 .name {
     font-size: 1.2rem;
     font-weight: 900;
-    padding: 20px 0 0px 4vw;
+    padding: 20px 0 0px 0;
 }
 
 .resume {
-    padding: 10px 0 20px 4vw;
+    padding: 10px 0 20px 0;
 }
 
 .saying {
@@ -449,6 +449,7 @@ a {
 }
 
 .welcome {
+    /* display: none; */
     /* position: relative;
     margin: auto;
     left: 100%;

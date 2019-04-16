@@ -170,10 +170,19 @@ function animateSection3() {
 
 function animateSection1() {
     setTimeout(fingerAppear, 0);
+    // setTimeout(Welcome, 2000);
+
 }
 
+// function Welcome() {
+//     $(".welcome").animate({
+//         'display': 'block',
+//     })
+// }
+
+
 function fingerAppear() {
-    $('#finger').transition('fade up', 500);
+    $('#finger').transition('fade up', 200);
 }
 
 function icon1Zoom() {
@@ -198,8 +207,11 @@ function S3introTeamZoom() {
 
 
 function WordTop() {
-    $("#word-about").animate({
-        'margin-top': '10rem',
+    // $("#word-about").animate({
+    //     'margin-top': '10rem',
+    // }, 1000)
+    $(".intro-left").animate({
+        'padding-top': '10rem',
     }, 1000)
 
     ArrowDis();
