@@ -174,7 +174,7 @@ function animateSection3() {
 }
 
 function animateSection1() {
-    setTimeout(fingerAppear, 0);
+    // setTimeout(fingerAppear, 0);
     // setTimeout(Welcome, 2000);
 
 }

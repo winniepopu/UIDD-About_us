@@ -435,7 +435,7 @@ a {
 
 .mid_pic {
     position: absolute;
-    padding-top: 15rem;
+    padding-top: 12rem;
     width: 100%;
     height: 200px;
     text-align: center;
@@ -443,13 +443,13 @@ a {
 
 #finger {
     /* position: absolute; */
-    width: 15%;
+    width: 17%;
     /* margin: 0 auto; */
     /* left: 200%; */
     /* top: 60%; */
 }
 
-#page104 {
+.page104 {
     width: 50vw;
     /* height: 350vh; */
     position: center;
