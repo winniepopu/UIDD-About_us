@@ -47,7 +47,7 @@ $(document).ready(function() {
         var sectionHeight = document.body.offsetHeight;
 
 
-        if (h >= 0.7 * sectionHeight && h <= 1.7 * sectionHeight) {
+        if (h >= 0.5 * sectionHeight && h < 1.5 * sectionHeight) {
 
             console.log(h)
             if (!show2) {
@@ -60,7 +60,7 @@ $(document).ready(function() {
             }
         }
 
-        if (h >= 1.7 * sectionHeight && h <= 2.7 * sectionHeight) {
+        if (h >= 1.5 * sectionHeight && h < 2.5 * sectionHeight) {
 
             if (!show3) {
 
@@ -71,7 +71,7 @@ $(document).ready(function() {
             }
         }
 
-        if (h >= 2.7 * sectionHeight && h <= 3.7 * sectionHeight) {
+        if (h >= 2.5 * sectionHeight && h < 3.5 * sectionHeight) {
             // 打你要讓他做的動作
             if (!show4) {
                 $('html, body').animate({ scrollTop: $("#section-3").offset().top }, 400);
@@ -80,7 +80,7 @@ $(document).ready(function() {
             }
         }
 
-        if (h >= 3.7 * sectionHeight && h <= 4.7 * sectionHeight) {
+        if (h >= 3.5 * sectionHeight && h < 4.5 * sectionHeight) {
 
             if (!show5) {
                 $('html, body').animate({ scrollTop: $("#section-4").offset().top }, 400);
@@ -88,16 +88,13 @@ $(document).ready(function() {
                 show5 = true;
             }
 
-            // $('.case-bigtwo1').slideDown(800)
-            // $('.case-bigtwo2').fadeIn(1500)
-            // $('.case-bigtwo3').fadeIn(1500)
         }
 
-        if (h >= 3700 && h <= 4000) {
-            // $('.case-big-p1').slideDown(800)
-            // $('.case-big-p2').fadeIn(1500)
-            // $('.case-big-p3').fadeIn(1500)
-        }
+        // if (h >= 3700 && h <= 4000) {
+        // $('.case-big-p1').slideDown(800)
+        // $('.case-big-p2').fadeIn(1500)
+        // $('.case-big-p3').fadeIn(1500)
+        // }
     })
 
 
@@ -155,7 +152,13 @@ function animateSection2() {
 
 function animateSection2_5() {
     $(".intro-2").animate({
-        'background-color': '#f7484e',
+        // 'background-color': '#f7484e',
+        // 'background-color': '#eceff2',
+        // 'background-color': '#d2d2d3',
+        'background-color': 'rgb(238, 229, 229)',
+
+
+
     }, 700)
 
     setTimeout(icon1Zoom, 1000);

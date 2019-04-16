@@ -29,10 +29,11 @@
 }
 
 .e-Title {
+    font-style: bold;
     width: 100%;
     font-family: Microsoft JhengHei;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .e-card {
@@ -50,17 +51,19 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-family: Microsoft JhengHei;
-    color: white;
+    color: black;
 }
 
 .P3-title {
+    font-family: Microsoft JhengHei;
     font-style: bold;
     margin-bottom: 2rem;
-    color: white;
+    color: black;
 }
 
 .e-iconWord {
-    color: white;
+    font-family: Microsoft JhengHei;
+    color: black;
 }
 
 
@@ -119,6 +122,8 @@
 .w-aboutus,
 .w-motivation,
 .w-ourmission {
+    /* height: 30%; */
+    width: 100%;
     margin-top: 3rem;
 }
 
@@ -193,7 +198,7 @@
 .w-word {
     margin-left: 3rem;
     font-family: Microsoft JhengHei;
-    line-height: 24px;
+    line-height: initial;
     font-size: 11pt;
 }
 
