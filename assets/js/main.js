@@ -7,12 +7,12 @@ $(document).ready(function() {
         // $([document.documentElement, document.body]).animate({
         //     scrollTop: $("#section-2").offset().top
         // }, 2000);
-        $('html, body').animate({ scrollTop: $("#section-2").offset().top }, 2000);
+        $('html, body').animate({ scrollTop: $(".intro").offset().top }, 2000);
     });
 
     $(".Bt-purpose").click(function() {
         $([document.documentElement, document.body]).animate({
-            scrollTop: $("#section-2_5").offset().top
+            scrollTop: $("#section-2extra").offset().top
         }, 2000);
     });
 
@@ -40,23 +40,18 @@ $(document).ready(function() {
     var show2 = false;
     var show3 = false;
     var show4 = false;
+    var show5 = false;
     $(window).scroll(function() {
         var h = $(this).scrollTop();
         console.log(h);
         var sectionHeight = document.body.offsetHeight;
-        // if (h <= 0.9 * sectionHeight) {
-        //     if (!show1) {
-        //         // console.log(show2)
-        //         animateSection1();
-        //         show1 = true;
-        //         // console.log(show2)
-        //     }
-        // }
 
 
-        if (h >= 0.9 * sectionHeight && h <= 1.9 * sectionHeight) {
+        if (h >= 0.7 * sectionHeight && h <= 1.7 * sectionHeight) {
+
             console.log(h)
             if (!show2) {
+                $('html, body').animate({ scrollTop: $("#section-2").offset().top }, 400);
                 // console.log(show2)
                 console.log(show2)
                 animateSection2();
@@ -65,22 +60,34 @@ $(document).ready(function() {
             }
         }
 
-        if (h >= 1.9 * sectionHeight && h <= 2.9 * sectionHeight) {
+        if (h >= 1.7 * sectionHeight && h <= 2.7 * sectionHeight) {
+
             if (!show3) {
+
+                console.log(show3)
+                $('html, body').animate({ scrollTop: $("#section-2extra").offset().top }, 400);
                 animateSection2_5();
                 show3 = true;
             }
         }
 
-        if (h >= 2.9 * sectionHeight && h <= 3.9 * sectionHeight) {
+        if (h >= 2.7 * sectionHeight && h <= 3.7 * sectionHeight) {
             // 打你要讓他做的動作
             if (!show4) {
+                $('html, body').animate({ scrollTop: $("#section-3").offset().top }, 400);
                 animateSection3();
                 show4 = true;
             }
         }
 
-        if (h >= 3000 && h <= 3400) {
+        if (h >= 3.7 * sectionHeight && h <= 4.7 * sectionHeight) {
+
+            if (!show5) {
+                $('html, body').animate({ scrollTop: $("#section-4").offset().top }, 400);
+                thankYou();
+                show5 = true;
+            }
+
             // $('.case-bigtwo1').slideDown(800)
             // $('.case-bigtwo2').fadeIn(1500)
             // $('.case-bigtwo3').fadeIn(1500)
@@ -133,7 +140,7 @@ $(document).ready(function() {
 
 
 function animateSection2() {
-    console.log("2555")
+
     $(".intro-left").animate({
         'margin-left': '0px',
     }, 2000)
@@ -237,6 +244,7 @@ function scrollTo(ele, speed) {
     }
     return false;
 }
+
 var imgArray = [
         'assets/media/page1-03.png',
         'assets/media/page1-02.png',
@@ -261,6 +269,31 @@ function slideShow() {
     setTimeout(slideShow, imgDuration);
 }
 slideShow();
+
+
+function thankYou() {
+    let el = document.querySelector('#page122');
+    let myAnimation = new LazyLinePainter(el, {
+        "ease": "easeLinear",
+        "strokeWidth": 7.2,
+        "strokeOpacity": 1,
+        "strokeColor": "#E84B3C",
+        "strokeCap": "square"
+    });
+    myAnimation.paint();
+}
+
+// (function(){
+//     document.onreadystatechange=()=>{
+//       if(document.readyState==='complete'){
+//         let el=document.querySelector('#page122');
+//         let myAnimation=new LazyLinePainter(el,{"ease":"easeLinear",
+//           "strokeWidth":7.2,"strokeOpacity":1,"strokeColor":"#E84B3C","strokeCap":"square"});
+//         myAnimation.paint();
+//       }
+//     }
+
+//   })();
 
 
 // (function() {

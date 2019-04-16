@@ -256,8 +256,22 @@ a {
     height: 100vh;
 }
 
-.S3 {
+#section-3 {
     position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#section-2extra {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#section-2 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
 }
 
 .S3allLine {
@@ -332,8 +346,6 @@ a {
 
 #section-3 {
     background-image: url(../media/S3background.png);
-    width: 100vw;
-    height: 100vh;
     /* background-color: black; */
 }
 
@@ -431,7 +443,7 @@ a {
 
 #page104 {
     width: 50vw;
-    height: 350vh;
+    /* height: 350vh; */
     position: center;
     overflow: visible;
 }
@@ -512,3 +524,57 @@ a {
 .dash-1 {}
 
 .dash-2 {}
+
+
+/*shanglong*/
+
+#section-4 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.S4background {
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    background-image: url("../media/S4background.png");
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+.group_photo {
+    height: 100vh;
+}
+
+.S4backTeam {
+    z-index: -1;
+    position: absolute;
+    bottom: -20vh;
+    /* width:100%; */
+    /* height:100%; */
+    margin: 0;
+    opacity: 0.15;
+}
+
+#p4 {
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    top: 20vh;
+    left: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page122 {
+    z-index: 20;
+    padding: 10vh 0 0 0;
+    width: 20vw;
+    position: center;
+    overflow: visible;
+}
