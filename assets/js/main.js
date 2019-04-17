@@ -34,7 +34,6 @@ $(document).ready(function() {
     $(function() {
         $('.personalImg').hover(sourceSwap, sourceSwap);
         $('.introTeam').hide();
-        $('.S3line').hide();
     });
     var show1 = false;
     var show2 = false;
@@ -84,7 +83,6 @@ $(document).ready(function() {
 
             if (!show5) {
                 $('html, body').animate({ scrollTop: $("#section-4").offset().top }, 400);
-                thankYou();
                 show5 = true;
             }
 
@@ -168,13 +166,12 @@ function animateSection2_5() {
 }
 
 function animateSection3() {
-    setTimeout(S3lineZoom, 0);
-    setTimeout(S3introTeamZoom, 1000);
+    setTimeout(S3introTeamZoom, 2000);
     setTimeout(ArrowStar3, 1800)
 }
 
 function animateSection1() {
-    // setTimeout(fingerAppear, 0);
+    setTimeout(fingerAppear, 0);
     // setTimeout(Welcome, 2000);
 
 }
@@ -200,10 +197,6 @@ function icon2Zoom() {
 
 function icon3Zoom() {
     $('e.card:nth-child(3)').transition('drop', 500)
-}
-
-function S3lineZoom() {
-    $('.S3line').transition('fade down', 2000);
 }
 
 function S3introTeamZoom() {
